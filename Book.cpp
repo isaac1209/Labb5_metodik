@@ -3,7 +3,11 @@ Book::Book(std::string book_name, double page_number):
         book_name(std::move(book_name)),page_number(page_number){}
 
 bool operator==(Book& lhs, Book& rhs){
+
     if(lhs.book_name==rhs.book_name){
+        return true;
+    }
+    if(lhs.page_number==rhs.page_number){
         return true;
     }
     return false;
