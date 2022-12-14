@@ -4,7 +4,7 @@
 
 class MyBinOp {
 public:
-
+//
     friend struct My_bin_op;
 
 };
